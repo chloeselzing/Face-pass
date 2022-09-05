@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Reset Password</title>
+    <style>
+                *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            color: #060827;
+            background-color: #EFEAEE;
+        }
+        nav{
+            margin: 0 5%;
+            align-self: center;
+        }
+        .nav{
+            width:7% ;
+        }
+        nav img{
+            display: grid;
+            width: 41px;
+            height: 41px;
+            margin: auto;
+            margin-top: 10px;
+       }
+       main{
+        display: grid;
+        justify-content: center;
+        color: white;
+        height: 70vh;
+        width: 100vw;
+       }
+       main form{
+        display: grid;
+        justify-content: center;
+        height: 356px;
+        width: 398.62px;
+        background-color: #060827;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+       main h2{
+        margin-top: 30px;
+       }
+       main input{
+        width: 250px;
+        height: 40px;
+        border-radius: 5.769px;
+        border: none;
+        text-align: center;
+       }
+       label{
+        margin-bottom: -20px;
+       }
+       main div img{
+        width: 20px;
+       }
+       .pass{
+        width: 280px;
+        border-radius: 5.769px;
+        height: 40px;
+        background-color: white;
+        color: white;
+       }
+       input:focus{
+        outline: 0;
+       }
+       #submit{
+        background-color: #460A3E;
+        width: 280px;
+        border-radius: 5.769px;
+        font-size: 15px;
+        border: none;
+        height: 40px;
+        color: white;
+       }
+        footer{
+        display: grid;
+        left: 0;
+        bottom: 0;
+        }
+       footer img{
+        margin: 0 100px;
+        justify-self: end;
+        width: 150px;
+      }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <img src="/images/404logo.svg" alt="">
+                <div class="text">FACEPASS</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="box">
+            <form action="">
+                <h2>Reset Your Password</h2>
+                <label for="password">Password</label>
+                <div class="pass">
+                    <input type="password" class="password"> 
+                    <img src="/images/eye.svg " id="eye1" alt="">
+                </div>
+                <label for="confirmPassword" class="cPassword" id="eye2">Confirm Password</label>
+                <div class="pass">
+                    <input type="password">
+                    <img src="/images/eye2_1 (1).svg" alt="">
+                </div>
+                <button id="submit">
+                    Update password
+                </button>
+            </form>
+    
+        </div>
+    </main>
+    <footer>
+        <img src="/images/NIS.png" alt="">
+    </footer>
+</body>
+</html>

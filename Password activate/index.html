@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Password Activate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+ *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #EFEAEE;
+    font-family: 'Roboto', sans-serif;
+
+}
+hr{
+    background-color:rgb(221, 223, 237);
+}
+nav{
+    display: grid;
+    grid-template-columns:  auto auto;
+    justify-content: space-between;
+    margin-top: -20px;
+    padding: 1%;
+}
+#logo, #police{
+    align-content: center;
+    justify-content: center;
+}
+#logo{
+    background-color: #060827;
+    border-radius: 14.84px;
+    padding: 3px;
+    margin-top: 19px;
+    }
+main{
+    margin:7%;
+}
+.logo{
+    display: grid;
+    width: 51px;
+    height: 51px;
+}
+.police{
+    padding-top: 20px;
+    width: 50px;
+}
+.box h1{
+    color: white;
+    padding-top: 5%;
+    text-align: center;
+}
+.box{
+    margin: auto;
+    height: 376px;
+    width: 50%;
+    border-radius: 0px;
+    background: #060827;
+}
+#form{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+#form input, select, .btn input{
+    height: 38px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 9.05px;
+    margin-top: 5px;
+}
+#form input, select, .btn input:focus{
+    outline: 0;
+}
+label{
+    color: white;
+}
+.btn{
+    display: grid;
+    margin: auto;
+    width: 190px;
+    height: 38px;
+    margin-top: 20px;
+}
+#ss{display: none;}
+@media only screen and (min-width: 600px) {
+
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="/images/logo.svg" class="logo" alt="logo">
+            </div>
+            <div id="police">
+                <img src="/images/police.png" class="police" alt="police image">
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <div class="box">
+            <h1>Activate Your Account </h1>
+            <form action="" id="form">
+                <div class="fname">
+                    <label for="fname">FirstName</label> <br>
+                    <input type="text">
+                </div>
+                <div class="lname">
+                    <label for="lname">LastName</label> <br>
+                    <input type="text">
+                </div>
+                <div class="Npass">
+                    <label for="">New Password</label> <br>
+                    <input type="password">
+                </div>
+                <div class="CNpass">
+                    <label for="">Confirm New Password</label> <br>
+                    <input type="password">
+                </div>
+                <select name="Gender" id="cars">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                </select>
+               
+            </form>
+            <div class="btn">
+                <input type="submit" id="ls" value="Save Password" >
+                <input type="submit" id="ss" value="Update Password" >
+
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
