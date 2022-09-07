@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
+    <title>Page Not found</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
+       
         body{
             background-color: #EFEAEE;
             font-family: 'Roboto', sans-serif;
             color: #060827;
             text-align: center;
-
         }
         nav{
-            margin: 0 5%;
+            width: 100%;
             align-self: center;
         }
         .nav{
@@ -25,16 +25,20 @@
         }
         nav img{
             display: grid;
-            width: 41px;
-            height: 41px;
-            margin: auto;
+            width: 61px;
+            height: 61px;
        }
        main img{
             display: grid;
             margin: auto;
             font-size: 21px;
+            width: 50%;
+       }
+       main p{
+        margin-top: 1%;
        }
        main button{
+        margin-top: 1%;
         width: 9.6rem;
         height: 2.5rem;
         border-radius: 6.05px;
@@ -42,24 +46,80 @@
         color: white;
         border: none;
        }
+       .ss{
+            display: none; 
+        }
+        .ls{
+            display: grid;
+         } 
+         footer img{
+            display: none;
+         }
+       @media screen and (max-width:600px) {
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        nav{
+            width: 100%;
+            background-color: #060827;
+        }
+        nav img{
+            padding: 10px 10px;
+        }
+        main{
+            margin: 5px ;
+            margin-top: 30%;
+        }
+        main p{
+            margin-top: 20%;
+            font-size: smaller;
+        }
+        main button{
+            margin-top: 20%;
+            padding: 2px;
+        }
+        main img{
+            width:90% ;
+        }
+        .ss{
+            display: grid;
+        }
+        .ls{
+            display: none;
+        }
+        footer{
+            margin-top: 20%;
+            margin-right: 10%;
+            display: grid;
+            justify-content: end;
+        }
+        footer img{
+            display: block;
+            width: 100px;
+         }
+       }
     </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="nav">
-                <img src="/images/404logo.svg" alt="">
-                <div class="text">FACEPASS</div>
+                <img src="/images/blue logo.png" class="ls" alt="">
+                <img src="/images/FacePass Logo.png" class="ss" alt="">
             </div>
         </nav>
     </header>
     <main>
-        <img src="/images/404bg.jpeg" alt="">
+        <img src="/images/pana.png" alt="">
         <p>
            Unfortunately, the page you are looking for is not available <br>
             You may have typed the web address incorrectly. Please check the address you entered
         </p>
         <button>Go back to Home</button>
     </main>
+    <footer>
+        <img src="/images/NIS.png" alt="">
+    </footer>
 </body>
 </html>

@@ -24,8 +24,8 @@
         }
         nav img{
             display: grid;
-            width: 41px;
-            height: 41px;
+            width: 61px;
+            height: 61px;
             margin: auto;
             margin-top: 10px;
        }
@@ -51,9 +51,11 @@
         border-radius: 9.6px;
         margin: auto;
     }
-    input{
-        width: 200px;
+    input, button{
+        width: 250px;
         height: 25px;
+        border: none;
+        border-radius: 2.6px;
     }
     input:focus{
         outline: none;
@@ -65,6 +67,9 @@
     form{
         margin-top: 0;
     }
+    button{
+        background-color: #460940;
+    }
     footer{
         display: grid;
         left: 0;
@@ -75,6 +80,13 @@
         justify-self: end;
         width: 150px;
       }
+      @media screen and(max-width:600px){
+        nav{
+            width: 100%;
+            background-color: #060827;
+            height: 100px;
+        }
+      }
 
 
     </style>
@@ -83,8 +95,7 @@
     <header>
         <nav>
             <div class="nav">
-                <img src="/images/404logo.svg" alt="">
-                <div class="text">FACEPASS</div>
+                <img src="/images/blue logo.png" alt="">
             </div>
         </nav>
     </header>
@@ -94,7 +105,8 @@
     <h2>Forgot Your Password?</h2>
     <form action="">
         <label for="email">Email</label><br> <br>
-        <input type="text">
+        <input type="text"><br>
+        <button>Resend Email?</button>
     </form>
 </div>
     </main>

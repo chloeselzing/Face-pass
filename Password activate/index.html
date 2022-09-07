@@ -16,7 +16,10 @@
 body{
     background-color: #EFEAEE;
     font-family: 'Roboto', sans-serif;
-
+    background-image: url(/images/SuperToroid-Purple-Glossy.png) ;
+    background-position: bottom left;
+    background-size: 450px 350px;
+    background-repeat: no-repeat;
 }
 hr{
     background-color:rgb(221, 223, 237);
@@ -28,7 +31,7 @@ nav{
     margin-top: -20px;
     padding: 1%;
 }
-#logo, #police{
+#logo, #police, .mobile{
     align-content: center;
     justify-content: center;
 }
@@ -59,7 +62,6 @@ main{
     margin: auto;
     height: 376px;
     width: 50%;
-    border-radius: 0px;
     background: #060827;
 }
 #form{
@@ -73,10 +75,12 @@ main{
 #form input, select, .btn input{
     height: 38px;
     width: 100%;
-    text-align: center;
     border: none;
-    border-radius: 9.05px;
+    border-radius: 5.05px;
     margin-top: 5px;
+}
+.btn input{
+    text-align: center;
 }
 #form input, select, .btn input:focus{
     outline: 0;
@@ -91,9 +95,79 @@ label{
     height: 38px;
     margin-top: 20px;
 }
+.mobile{
+    display: none;
+}
 #ss{display: none;}
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
+    body{
+        background-color:#FFFFFF;
+        background-image: url(/images/Round.png);
+        background-position: bottom left;
+        background-size: 300px 300px;
+        height: auto;
 
+    }
+nav{
+    height: 100%;
+    background: #060827;
+}
+main{
+    height: 80vh;
+}
+.mobile{
+    margin: 10px 10px;
+    display: grid;
+}
+.logo{
+    display: none;
+}
+#ss{
+    background-color: #460940;
+    display: grid;
+}
+#ls{
+    display: none;
+}
+#police{
+    display: none;
+}
+.box{
+    width: auto;
+border: none;
+}
+.box h1{
+    color: black;
+    background-color: white;
+}
+main{
+    border: none;
+
+}
+#form{
+    width: auto;
+    display: grid;
+    grid-template-columns: auto;
+    background-color:#FFFFFF;
+    grid-template-rows: auto auto auto auto auto;
+}
+.btn{
+    width: 300px;
+
+}
+label{
+    color: black;
+
+}
+hr{
+    display: none;
+}
+#form input, select{
+    font-weight:bolder;
+    font-size: large;
+    background-color: #CECFE2;
+    width: 300px;
+}
 }
 
     </style>
@@ -103,6 +177,7 @@ label{
         <nav>
             <div id="logo">
                 <img src="/images/logo.svg" class="logo" alt="logo">
+                <img src="/images/FacePass Logo.png" class="mobile" alt="">
             </div>
             <div id="police">
                 <img src="/images/police.png" class="police" alt="police image">
