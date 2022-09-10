@@ -18,9 +18,8 @@
             color: #060827;
             background-color: #EFEAEE;
         }
-        nav{
-            margin: 0 5%;
-            align-self: center;
+        .white-logo{
+            display: none;
         }
         .nav{
             width:7% ;
@@ -30,47 +29,68 @@
             width: 61px;
             height: 61px;
             margin: auto;
-            margin-top: 10px;
+            padding: 5px;
        }
        main{
         display: grid;
         justify-content: center;
         color: white;
         height: 70vh;
-        width: 100vw;
        }
-       main div{
+       #box{
         text-align: center;
         height: 356px;
         width: 398.62px;
         border-radius: 13.769px;
         background-color: #060827;
-        margin: 0;
-        position: absolute;
-        line-height: 50px;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        align-self: center;
        }
        main img{
         width: 100px;
+        margin: 100px 100px 10px ;
+        align-self: center;
       }
       footer img{
-        margin: 0 100px;
+        margin: 0 50px;
         justify-self: end;
         width: 150px;
       }
-       #box{
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-       }
        footer{
         display: grid;
-        left: 0;
-        bottom: 0;
+        }
+        @media screen and (max-width:600px) {
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .white-logo{
+                display:block;
+            }
+            .blue-logo{
+                display: none;
+            }
+            nav{
+                background-color: #060827;
+            }
+            main #box{
+                border-radius: 5.769px;
+                width: 314.62px;
+                height: 272.1px;
+                line-height: 20px;
+            }
+            main h2{
+                font-size: 13.5px;
+
+            }
+            main p{
+                font-weight: 700;
+                font-size: 9.5px;
+            }
+            main img{
+                margin: 50px 50px 0 ;
+
+            }
+            
         }
 
     </style>
@@ -79,18 +99,18 @@
     <header>
         <nav>
             <div class="nav">
-                <img src="/images/blue logo.png" alt="">
+                <img src="/images/blue logo.png" class="blue-logo">
+                <img src="/images/FacePass Logo.png" class="white-logo">
+
             </div>
         </nav>
     </header>  
     <main>
-        <div>
             <div id="box">
-                <img src="/images/tick_1.svg" alt="">
-                <h2>Password Changed</h2>
+                <img src="/images/tick_1.svg" alt=""><br>
+                <h2>Password Changed</h2><br>
                 <p>Your password has been successfully changed</p>   
             </div>
-        </div>
     </main>
     <footer>
         <img src="/images/NIS.png" alt="">
