@@ -27,7 +27,7 @@
             width: 61px;
             height: 61px;
             margin: auto;
-            margin-top: 10px;
+            padding-top: 10px;
        }
 
     main{
@@ -57,6 +57,9 @@
         border: none;
         border-radius: 2.6px;
     }
+    .white-logo{
+        display: none;
+    }
     input:focus{
         outline: none;
         text-align: center;
@@ -67,6 +70,9 @@
     form{
         margin-top: 0;
     }
+    .form-mobile{
+        display: none;
+    }
     button{
         background-color: #460940;
     }
@@ -76,17 +82,89 @@
         bottom: 0;
         }
     footer img{
-        margin: 0 100px;
+        margin: 0 50px;
         justify-self: end;
         width: 150px;
       }
-      @media screen and(max-width:600px){
+      .lock{
+        display: none;
+      }
+      @media screen and (max-width:600px) {
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:#FFFFFF;
+            color: black;
+        }
         nav{
+            margin: 0;
+            padding: 0;
             width: 100%;
             background-color: #060827;
             height: 100px;
         }
-      }
+        .form-mobile{
+            display: grid;
+        }
+        .white-logo{
+            display: block;
+            padding: 10px 10px;
+
+        }
+        .blue-logo{
+            display:none;
+        }
+        main{
+            color: black;
+            display: grid;
+            grid-template-columns: auto;
+        }
+        h2{
+            text-align: center ;
+        }
+        .lock{
+            width: 83px;
+            height: 59.5;
+            display: grid;
+        }
+        form button{
+            display: grid;
+            width: 300px;
+            height: 38px;
+            align-content: center;
+            margin: auto;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+
+        }
+        label{
+            color: #4C4D64;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        form div{
+            width: fit-content;
+            margin: auto;
+        }
+        input{
+            margin: 0;
+            width: 300px;
+            height: 38px;
+            background-color: #CECFE2;
+            font-weight: 600;
+            font-size: 12.5px;
+        }
+
+        .cuate{
+            display: none;
+        }
+        .box{
+            display: none;
+        }
+      } 
 
 
     </style>
@@ -95,19 +173,40 @@
     <header>
         <nav>
             <div class="nav">
-                <img src="/images/blue logo.png" alt="">
+                <img src="/images/blue logo.png" class="blue-logo" alt="">
+                <img src="/images/FacePass Logo.png" class="white-logo" alt="">
+
             </div>
         </nav>
     </header>
     <main>
-<img src="/images/cuate.png" alt="">
+<img src="/images/Group 55.png" class="lock">
+<img src="/images/cuate.png" class="cuate">
 <div class="box">
     <h2>Forgot Your Password?</h2>
+
     <form action="">
+
         <label for="email">Email</label><br> <br>
         <input type="text"><br>
         <button>Resend Email?</button>
     </form>
+</div>
+<div class="form-mobile">
+<form action="">
+    <h2>Forgot Your Password?</h2><br>
+    <div>
+        <label for="email">Enter your Email</label><br>
+        <input type="email">
+    </div>
+    <br>
+    <p>An email has been sent to ********@gmail.com </p>
+    <br>
+    <button>Update password</button>
+
+    
+
+</form>
 </div>
     </main>
     <footer>
