@@ -16,10 +16,6 @@
 body{
     background-color: #EFEAEE;
     font-family: 'Roboto', sans-serif;
-    background-image: url(/images/SuperToroid-Purple-Glossy.png) ;
-    background-position: bottom left;
-    background-size: 450px 350px;
-    background-repeat: no-repeat;
 }
 hr{
     background-color:rgb(221, 223, 237);
@@ -46,14 +42,14 @@ main{
 }
 .logo{
     display: grid;
+    height: 62px;
     width: 51px;
-    height: 51px;
 }
 .police{
     padding-top: 20px;
-    width: 50px;
+    width: 49px;
 }
-.box h1{
+.box h2{
     color: white;
     padding-top: 5%;
     text-align: center;
@@ -86,6 +82,7 @@ main{
     outline: 0;
 }
 label{
+    margin: 10px 0px;
     color: white;
 }
 .btn{
@@ -93,21 +90,31 @@ label{
     margin: auto;
     width: 190px;
     height: 38px;
-    margin-top: 20px;
 }
 .mobile{
     display: none;
 }
 #ss{display: none;}
-@media only screen and (max-width: 600px) {
-    body{
-        background-color:#FFFFFF;
-        background-image: url(/images/Round.png);
-        background-position: bottom left;
-        background-size: 300px 300px;
-        height: auto;
+footer{
+    display: none;
+}
+footer img{
+ margin: 0px 50px;
+ justify-self: end;
+ width: 150px;
+ }
 
-    }
+@media only screen and (max-width: 600px) {
+*{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    background-color: white;
+ }
+.nav{
+            width:7% ;
+        }
 nav{
     height: 100%;
     background: #060827;
@@ -115,14 +122,25 @@ nav{
 main{
     height: 80vh;
 }
+input, select{
+    text-indent: 10px;
+    background-color: #CECFE2;
+}
 .mobile{
-    margin: 10px 10px;
     display: grid;
+    padding-top: 10px;
+    height: 75px;
+    width: 62px;
+    margin: auto;
+}
+#form input, select, .btn{
+    width:80vw;
 }
 .logo{
     display: none;
 }
 #ss{
+    text-indent: 0px;
     background-color: #460940;
     display: grid;
 }
@@ -133,40 +151,29 @@ main{
     display: none;
 }
 .box{
+    margin: auto;
+    height: auto;
     width: auto;
-border: none;
-}
-.box h1{
-    color: black;
     background-color: white;
 }
-main{
-    border: none;
-
+label,.box h2{
+    color: black;
 }
-#form{
-    width: auto;
-    display: grid;
-    grid-template-columns: auto;
-    background-color:#FFFFFF;
-    grid-template-rows: auto auto auto auto auto;
-}
-.btn{
-    width: 300px;
-
+.box h2{
+    padding: 1px;
+    color: #060827;
 }
 label{
-    color: black;
-
+color:#797A8B;
+font-size: 16px;
+font-weight: 600;
 }
-hr{
-    display: none;
-}
-#form input, select{
-    font-weight:bolder;
-    font-size: large;
-    background-color: #CECFE2;
-    width: 300px;
+#form{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10px;
+    margin-top: 10%;
+    width: auto;
 }
 }
 
@@ -187,7 +194,7 @@ hr{
     </header>
     <main>
         <div class="box">
-            <h1>Activate Your Account </h1>
+            <h2>Activate Your Account </h2>
             <form action="" id="form">
                 <div class="fname">
                     <label for="fname">FirstName</label> <br>
@@ -211,6 +218,8 @@ hr{
                 </select>
                
             </form>
+            <br>
+            <br>
             <div class="btn">
                 <input type="submit" id="ls" value="Save Password" >
                 <input type="submit" id="ss" value="Update Password" >
@@ -219,5 +228,9 @@ hr{
 
         </div>
     </main>
+    <footer>
+        <img src="/images/NIS.png" alt="">
+    </footer>
+
 </body>
 </html>
